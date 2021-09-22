@@ -1,0 +1,13 @@
+
+.main-container{
+    margin-left: 6em;
+    margin-right: 6em;
+    border: 1px solid black;
+}
+
+.rows-container{
+    display: flex;
+    background: black;
+    overflow: hidden;
+}
+

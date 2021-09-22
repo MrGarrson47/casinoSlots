@@ -1,0 +1,7 @@
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(37, 72, 189);
+    padding: .5em;
+}
