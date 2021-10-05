@@ -1,0 +1,601 @@
+@keyframes paylineFlash {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1.5);
+    }
+  }
+  
+  @keyframes paylineFlashCopy1 {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1.5);
+    }
+  }
+  
+  @keyframes paylineFlashCopy2 {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1.5);
+    }
+  }
+  
+  .payline-flash-animation {
+    animation-name: paylineFlash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline4-flash-animation {
+    animation-name: payline4Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline5-flash-animation {
+    animation-name: payline5Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline6-Section1-flash-animation {
+    animation-name: payline6Section1Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline6-Section2-flash-animation {
+    animation-name: payline6Section2Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline6-Section3-flash-animation {
+    animation-name: payline6Section3Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline6-Section4-flash-animation {
+    animation-name: payline6Section4Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline6-Section5-flash-animation {
+    animation-name: payline6Section5Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline7-Section1-flash-animation {
+    animation-name: payline7Section1Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  .payline7-Section2-flash-animation {
+    animation-name: payline7Section2Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  .payline7-Section3-flash-animation {
+    animation-name: payline7Section3Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  .payline7-Section4-flash-animation {
+    animation-name: payline7Section4Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  .payline7-Section5-flash-animation {
+    animation-name: payline7Section5Flash;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline-flash-animation-copy1 {
+    animation-name: paylineFlashCopy1;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline-flash-animation-copy2 {
+    animation-name: paylineFlashCopy2;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline4-flash-animation-copy1 {
+    animation-name: payline4FlashCopy1;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .payline5-flash-animation-copy1 {
+    animation-name: payline5FlashCopy1;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    @keyframes payline4Flash {
+      0% {
+        transform: rotate(24deg) translateY(10px) scaleY(1);
+      }
+      100% {
+        transform: rotate(24deg) translateY(10px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5Flash {
+      0% {
+        transform: rotate(-24deg) translateY(-10px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-24deg) translateY(-10px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section2Flash {
+      0% {
+        transform: rotate(-18deg) translate(7px, 1px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-18deg) translate(7px, 1px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section3Flash {
+      0% {
+        transform: translate(9px, 3px) scaleY(1);
+        width: 8%;
+      }
+      100% {
+        transform: translate(9px, 3px) scaleY(1.5);
+        width: 8%;
+      }
+    }
+    @keyframes payline6Section4Flash {
+      0% {
+        transform: rotate(18deg) translate(5px, -3px) scaleY(1);
+      }
+      100% {
+        transform: rotate(18deg) translate(5px, -3px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section5Flash {
+      0% {
+        transform: translate(3px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(3px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section2Flash {
+      0% {
+        transform: rotate(18deg) translate(7px, -2px) scaleY(1);
+      }
+      100% {
+        transform: rotate(18deg) translate(7px, -2px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section3Flash {
+      0% {
+        transform: translate(9px, -5px) scaleY(1);
+        width: 8%;
+      }
+      100% {
+        transform: translate(9px, -5px) scaleY(1.5);
+        width: 8%;
+      }
+    }
+    @keyframes payline7Section4Flash {
+      0% {
+        transform: rotate(-18deg) translate(3px, 1px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-18deg) translate(3px, 1px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section5Flash {
+      0% {
+        transform: translate(0px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(0px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline4FlashCopy1 {
+      0% {
+        transform: rotate(24deg) translateY(10px) scaleY(1);
+      }
+      100% {
+        transform: rotate(24deg) translateY(10px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5FlashCopy1 {
+      0% {
+        transform: rotate(-24deg) translateY(-10px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-24deg) translateY(-10px) scaleY(1.5);
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    @keyframes payline4Flash {
+      0% {
+        transform: rotate(25deg) translateY(20px) scaleY(1);
+      }
+      100% {
+        transform: rotate(25deg) translateY(20px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5Flash {
+      0% {
+        transform: rotate(-25deg) translateY(-20px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-25deg) translateY(-20px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section2Flash {
+      0% {
+        transform: rotate(-20deg) translate(5px, 1px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-20deg) translate(5px, 1px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section3Flash {
+      0% {
+        transform: translate(9px, 3px) scaleY(1);
+        width: 8%;
+      }
+      100% {
+        transform: translate(9px, 3px) scaleY(1.5);
+        width: 8%;
+      }
+    }
+    @keyframes payline6Section4Flash {
+      0% {
+        transform: rotate(20deg) translate(5px, -3px) scaleY(1);
+      }
+      100% {
+        transform: rotate(20deg) translate(5px, -3px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section5Flash {
+      0% {
+        transform: translate(5px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(5px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section2Flash {
+      0% {
+        transform: rotate(20deg) translate(5px, -1px) scaleY(1);
+      }
+      100% {
+        transform: rotate(20deg) translate(5px, -1px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section3Flash {
+      0% {
+        transform: translate(9px, -3px) scaleY(1);
+        width: 8%;
+      }
+      100% {
+        transform: translate(9px, -3px) scaleY(1.5);
+        width: 8%;
+      }
+    }
+    @keyframes payline7Section4Flash {
+      0% {
+        transform: rotate(-20deg) translate(5px, 3px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-20deg) translate(5px, 3px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section5Flash {
+      0% {
+        transform: translate(5px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(5px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline4FlashCopy1 {
+      0% {
+        transform: rotate(25deg) translateY(20px) scaleY(1);
+      }
+      100% {
+        transform: rotate(25deg) translateY(20px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5FlashCopy1 {
+      0% {
+        transform: rotate(-25deg) translateY(-20px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-25deg) translateY(-20px) scaleY(1.5);
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    @keyframes payline4Flash {
+      0% {
+        transform: rotate(25deg) translate(-80px, 25px) scaleY(1);
+      }
+      100% {
+        transform: rotate(25deg) translate(-80px, 25px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5Flash {
+      0% {
+        transform: rotate(-25deg) translate(-80px, -25px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-25deg) translate(-80px, -25px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section2Flash {
+      0% {
+        transform: rotate(-22deg) translate(1px, 0px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-22deg) translate(1px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section3Flash {
+      0% {
+        transform: translate(7.5px, 4.5px) scaleY(1);
+        width: 10%;
+      }
+      100% {
+        transform: translate(7.5px, 4.5px) scaleY(1.5);
+        width: 10%;
+      }
+    }
+    @keyframes payline6Section4Flash {
+      0% {
+        transform: rotate(22deg) translate(13.5px, -5px) scaleY(1);
+      }
+      100% {
+        transform: rotate(22deg) translate(13.5px, -5px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section5Flash {
+      0% {
+        transform: translate(20px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(20px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section2Flash {
+      0% {
+        transform: rotate(22deg) translate(0px, 0px) scaleY(1);
+      }
+      100% {
+        transform: rotate(22deg) translate(0px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section3Flash {
+      0% {
+        transform: translate(6.8px, -5px) scaleY(1);
+        width: 7.8%;
+      }
+      100% {
+        transform: translate(6.8px, -5px) scaleY(1.5);
+        width: 7.8%;
+      }
+    }
+    @keyframes payline7Section4Flash {
+      0% {
+        transform: rotate(-22deg) translate(-1px, 0px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-22deg) translate(-1px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section5Flash {
+      0% {
+        transform: translate(3.5px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(3.5px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline4FlashCopy1 {
+      0% {
+        transform: rotate(25deg) translate(-80px, 25px) scaleY(1);
+      }
+      100% {
+        transform: rotate(25deg) translate(-80px, 25px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5FlashCopy1 {
+      0% {
+        transform: rotate(-25deg) translate(-80px, -25px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-25deg) translate(-80px, -25px) scaleY(1.5);
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    @keyframes payline4Flash {
+      0% {
+        transform: rotate(26deg) translate(-25px, 35px) scaleY(1);
+      }
+      100% {
+        transform: rotate(26deg) translate(-25px, 35px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5Flash {
+      0% {
+        transform: rotate(-26deg) translate(-25px, -37px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-26deg) translate(-25px, -37px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section2Flash {
+      0% {
+        transform: rotate(-24deg) translate(-6.5px, -5px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-24deg) translate(-6.5px, -5px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section3Flash {
+      0% {
+        transform: translate(0px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(0px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section4Flash {
+      0% {
+        transform: rotate(24deg) translate(6.5px, -5px) scaleY(1);
+      }
+      100% {
+        transform: rotate(24deg) translate(6.5px, -5px) scaleY(1.5);
+      }
+    }
+    @keyframes payline6Section5Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section1Flash {
+      0% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section2Flash {
+      0% {
+        transform: rotate(24deg) translate(-6.5px, 5px) scaleY(1);
+      }
+      100% {
+        transform: rotate(24deg) translate(-6.5px, 5px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section3Flash {
+      0% {
+        transform: translate(0px, 0px) scaleY(1);
+        width: 10%;
+      }
+      100% {
+        transform: translate(0px, 0px) scaleY(1.5);
+        width: 10%;
+      }
+    }
+    @keyframes payline7Section4Flash {
+      0% {
+        transform: rotate(-24deg) translate(6.5px, 5px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-24deg) translate(6.5px, 5px) scaleY(1.5);
+      }
+    }
+    @keyframes payline7Section5Flash {
+      0% {
+        transform: translate(0px, 0px) scaleY(1);
+      }
+      100% {
+        transform: translate(0px, 0px) scaleY(1.5);
+      }
+    }
+    @keyframes payline4FlashCopy1 {
+      0% {
+        transform: rotate(26deg) translate(-25px, 35px) scaleY(1);
+      }
+      100% {
+        transform: rotate(26deg) translate(-25px, 35px) scaleY(1.5);
+      }
+    }
+    @keyframes payline5FlashCopy1 {
+      0% {
+        transform: rotate(-26deg) translate(-25px, -37px) scaleY(1);
+      }
+      100% {
+        transform: rotate(-26deg) translate(-25px, -37px) scaleY(1.5);
+      }
+    }
+  }
+  

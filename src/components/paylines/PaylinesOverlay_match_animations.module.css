@@ -1,0 +1,2421 @@
+.payline1-match-double-animation {
+  animation-name: payline1MatchDouble;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: red;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline1MatchDouble {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 62%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline2-match-double-animation {
+  animation-name: payline2MatchDouble;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: blue;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline2MatchDouble {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 62%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline3-match-double-animation {
+  animation-name: payline3MatchDouble;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: green;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline3MatchDouble {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 62%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline4-match-double-animation {
+  animation-name: payline4MatchDouble;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  width: 10%;
+  height: 5px;
+  background: yellow;
+  z-index: 20;
+  transform: rotate(26deg) translate(-25px, 35px);
+}
+
+@keyframes payline4MatchDouble {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 62%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline5-match-double-animation {
+  animation-name: payline5MatchDouble;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  height: 5px;
+  background: purple;
+  z-index: 20;
+  transform: rotate(-26deg) translate(-44px, 60px) scaleX(1);
+}
+
+.payline1-match-triple-animation {
+  animation-name: payline1MatchTriple;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: red;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 92%;
+      transform: scaleY(1.5);
+    }
+  }
+
+.payline2-match-triple-animation {
+  animation-name: payline2MatchTriple;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: blue;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline2MatchTriple {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 92%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline3-match-triple-animation {
+  animation-name: payline3MatchTriple;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: green;
+  height: 5px;
+  width: 0%;
+}
+
+@keyframes payline3MatchTriple {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 92%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline4-match-triple-animation {
+  animation-name: payline4MatchTriple;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  width: 10%;
+  height: 5px;
+  background: yellow;
+  z-index: 20;
+  transform: rotate(26deg) translate(-25px, 35px);
+}
+
+@keyframes payline4MatchTriple {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 92%;
+    transform: scaleY(1.5);
+  }
+}
+
+.payline5-match-triple-animation {
+  animation-name: payline5MatchTriple;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  height: 5px;
+  background: purple;
+  z-index: 20;
+  transform: rotate(-26deg) translate(-25px, -37px);
+}
+
+@keyframes payline5MatchTriple {
+  0% {
+    width: 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    width: 92%;
+    transform: scaleY(1.5);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  @keyframes payline1MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 57.4%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  @keyframes payline2MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 57.4%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  @keyframes payline3MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 57.4%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  @keyframes payline1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 92%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  @keyframes payline2MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 92%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  @keyframes payline3MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 92%;
+      transform: scaleY(0.9);
+    }
+  }
+  @keyframes payline4MatchDouble {
+    0% {
+      transform: rotate(27deg) translate(15px, 10px);
+    }
+    100% {
+      transform: rotate(27deg) translate(15px, 10px) scale(11, 0.9);
+    }
+  }
+
+  @keyframes payline4MatchTriple {
+    0% {
+      transform: rotate(26deg) translate(15px, 5px);
+    }
+    100% {
+      transform: rotate(26deg) translate(15px, 5px) scale(19.5, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(-27deg) translate(-18px, 65px);
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-27deg) translate(-18px, 65px) scale(6, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchTriple {
+    0% {
+      transform: rotate(-25deg) translate(-18px, 55px);
+    }
+    100% {
+      transform: rotate(-25deg) translate(-18px, 55px) scale(19.5, 0.9);
+    }
+  }
+
+  /* animations for payline6 */
+
+  /* payline6 double match */
+
+  .payline6-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  .payline6-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(0px, 11px) scale(1, 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(0px, 11px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scale(0. 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline6 triple match */
+
+  .payline6-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  .payline6-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(0px, 11px) scale(1, 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(0px, 11px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scale(0. 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(24deg) translate(6.5px, -5px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+
+  @keyframes payline6Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-44px, -1px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-44px, -1px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 33%;
+    left: 77.8%;
+  }
+
+  @keyframes payline6Section5MatchTriple {
+    0% {
+      width: 0%;
+      transform: translate(0, -5px) scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: translate(-5px, -5px) scaleY(0.9);
+    }
+  }
+
+  /* animations for payline7 */
+
+  /* payline7 double animation */
+
+  .payline7-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: scaleY(0.9);
+    }
+  }
+
+  .payline7-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(3.5px, -12px) scale(1,0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(3.5px, -12px) scale(2.25, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline7 triple animation */
+
+  .payline7-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(3.5px, -12px) scale(1,0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(3.5px, -12px) scale(2.25, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(-24deg) translate(-126.5px, -4px);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 22%;
+  }
+
+  @keyframes payline7Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-44px, 2px) scale(1, 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-44px, 2px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 63.5%;
+    left: 77.8%;
+  }
+
+  @keyframes payline7Section5MatchTriple {
+    0% {
+      width: 0%;
+      transform: translate(-2px, 2px) scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: translate(-2px, 2px) scaleY(0.9);
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  @keyframes payline1MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 47.5%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  @keyframes payline2MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 47.5%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  @keyframes payline3MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 47.5%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  @keyframes payline4MatchDouble {
+    0% {
+      transform: rotate(26deg) translate(20px, 15px);
+    }
+    100% {
+      transform: rotate(26deg) translate(20px, 15px) scale(12, 0.9);
+    }
+  }
+
+  @keyframes payline4MatchTriple {
+    0% {
+      transform: rotate(26deg) translate(20px, 15px) scale(1, 0.9);
+    }
+    100% {
+      transform: rotate(26deg) translate(20px, 15px) scale(19.9, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchDouble {
+    0% {
+      transform: rotate(-26deg) translate(-30px, 93px);
+    }
+    100% {
+      transform: rotate(-26deg) translate(-30px, 93px) scale(12, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchTriple {
+    0% {
+      transform: rotate(-26deg) translate(-30px, 93px);
+    }
+    100% {
+      transform: rotate(-26deg) translate(-30px, 93px) scale(20, 0.9);
+    }
+  }
+
+  @keyframes payline1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  @keyframes payline2MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  @keyframes payline3MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5,0.9);
+    }
+  }
+
+  /* animations for payline6 */
+
+  /* payline6 double match */
+
+  .payline6-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(1px, 21px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(1px, 21px) scale(2.3, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline6 triple match */
+
+  .payline6-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(1px, 21px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(1px, 21px) scale(2.3, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(24deg) translate(6.5px, -5px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+
+  @keyframes payline6Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-71px, 0.5px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-71px, 0.5px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 33%;
+    left: 77.8%;
+  }
+
+  @keyframes payline6Section5MatchTriple {
+    0% {
+      width: 0%;
+      transform: translate(0, -5px);
+    }
+    100% {
+      width: 20%;
+      transform: translate(0, -5px);
+    }
+  }
+
+  /* animations for payline7 */
+
+  /* payline7 double animation */
+
+  .payline7-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(1px, -22px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(1px, -22px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1,0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline7 triple animation */
+
+  .payline7-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(1px, -22px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(1px, -22px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scale(1,0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(-24deg) translate(-126.5px, -4px);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 22%;
+  }
+
+  @keyframes payline7Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-70.5px,-1px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-70.5px,-1px) scale(2.4,0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 63.5%;
+    left: 77.8%;
+  }
+
+  @keyframes payline7Section5MatchTriple {
+    0% {
+      width: 0%;
+      transform: translate(-5px,2px) scale(1,0.9);
+    }
+    100% {
+      width: 20%;
+      transform: translate(-5px,2px) scale(1,0.9);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  @keyframes payline1MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 48.5%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  @keyframes payline2MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 48.5%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  @keyframes payline3MatchDouble {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 48.5%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  @keyframes payline4MatchDouble {
+    0% {
+      transform: rotate(26deg) translate(0px, 20px);
+    }
+    100% {
+      transform: rotate(26deg) translate(0px, 20px) scale(12.9, 0.9);
+    }
+  }
+
+  @keyframes payline4MatchTriple {
+    0% {
+      transform: rotate(25deg) translate(5px, 20px);
+    }
+    100% {
+      transform: rotate(25deg) translate(5px, 20px) scale(21, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchDouble {
+    0% {
+      transform: rotate(-26deg) translate(-43px, 125px);
+    }
+    100% {
+      transform: rotate(-26deg) translate(-43px, 125px) scale(12.1, 0.9);
+    }
+  }
+
+  @keyframes payline5MatchTriple {
+    0% {
+      transform: rotate(-26deg) translate(-43px, 125px);
+    }
+    100% {
+      transform: rotate(-26deg) translate(-43px, 125px) scale(20, 0.9);
+    }
+  }
+
+  @keyframes payline1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  @keyframes payline2MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  @keyframes payline3MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scale(1.5, 0.9);
+    }
+  }
+
+  /* animations for payline6 */
+
+  /* payline6 double match */
+
+  .payline6-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-5.5px, 31px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-5.5px, 31px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scale(0, 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: translateY(2px) scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline6 triple match */
+
+  .payline6-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-5.5px, 31px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-5.5px, 31px) scale(2.4, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: translateY(2px) scale(0, 0.9);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: translateY(2px) scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(24deg) translate(6.5px, -5px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+
+  @keyframes payline6Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-90.5px, 3px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-90.5px, 3px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 33%;
+    left: 77.8%;
+  }
+
+  @keyframes payline6Section5MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  /* animations for payline7 */
+
+  /* payline7 double animation */
+
+  .payline7-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scaleY(0.9);
+  }
+
+  @keyframes payline7Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-7px, -31px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-7px, -31px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: translate(4.5px, 0) scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: translate(4.5px, 0) scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  /* payline7 triple animation */
+
+  .payline7-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-7px, -31px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-7px, -31px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: translate(4.5px, 0) scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: translate(4.5px, 0) scale(1, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(-24deg) translate(-126.5px, -4px);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 22%;
+  }
+
+  @keyframes payline7Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-87px, 0px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-87px, 0px) scale(2.5, 0.9);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 63.5%;
+    left: 77.8%;
+  }
+
+  @keyframes payline7Section5MatchTriple {
+    0% {
+      width: 0%;
+      transform: translate(5px, 0) scaleY(0.9);
+    }
+    100% {
+      width: 20%;
+      transform: translate(5px, 0) scaleY(0.9);
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .payline1-match-double-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  .payline1-match-triple-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  @keyframes payline1MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scaleY(1.5);
+    }
+  }
+
+  .payline2-match-double-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  .payline2-match-triple-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  @keyframes payline2MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scaleY(1.5);
+    }
+  }
+
+  .payline3-match-double-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  .payline3-match-triple-animation{
+    transform: scaleY(0.9);
+    height: 4px;
+  }
+
+  @keyframes payline3MatchTriple {
+    0% {
+      width: 0%;
+      transform: scaleY(1);
+    }
+    100% {
+      width: 100%;
+      transform: scaleY(1.5);
+    }
+  }
+
+  @keyframes payline4MatchDouble {
+    0% {
+      transform: rotate(26deg) translate(20px, 25px);
+    }
+    100% {
+      transform: rotate(26deg) translate(20px, 25px) scaleX(12.9);
+    }
+  }
+
+  @keyframes payline4MatchTriple {
+    0% {
+      transform: rotate(26deg) translate(20px, 25px);
+    }
+    100% {
+      transform: rotate(26deg) translate(20px, 25px) scaleX(20.6);
+    }
+  }
+
+  @keyframes payline5MatchDouble {
+    0% {
+      transform: rotate(-25deg) translate(-74px, 170px);
+    }
+    100% {
+      transform: rotate(-25deg) translate(-74px, 170px) scaleX(12.9);
+    }
+  }
+
+  @keyframes payline5MatchTriple {
+    0% {
+      transform: rotate(-25deg) translate(-74px, 170px);
+    }
+    100% {
+      transform: rotate(-25deg) translate(-74px, 170px) scaleX(20.5);
+    }
+  }
+
+  /* animations for payline6 */
+
+  /* payline6 double match */
+
+  .payline6-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-16px, 41px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-16px, 41px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  /* payline6 triple match */
+
+  .payline6-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline6Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline6-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: rotate(-24deg) translate(-6.5px, -5px);
+    opacity: 0;
+  }
+
+  @keyframes payline6Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-16px, 41px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-16px, 41px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+  }
+
+  @keyframes payline6Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(24deg) translate(6.5px, -5px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+
+  @keyframes payline6Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-126.5px, 3.9px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-126.5px, 3.9px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline6-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(20, 138, 98);
+    z-index: 20;
+    animation-name: payline6Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 33%;
+    left: 77.8%;
+  }
+
+  @keyframes payline6Section5MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  /* animations for payline7 */
+
+  /* payline7 double animation */
+
+  .payline7-section1-match-double-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchDouble {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 330ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-16.5px, -41.5px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-16.5px, -41.5px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-double-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchDouble;
+    animation-duration: 330ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 660ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchDouble {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  /* payline7 triple animation */
+
+  .payline7-section1-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section1MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes payline7Section1MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .payline7-section2-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section2MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    transform: rotate(24deg) translate(-16.5px, -41.5px);
+    opacity: 0;
+  }
+
+  @keyframes payline7Section2MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-16.5px, -41.5px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(24deg) translate(-16.5px, -41.5px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section3-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section3MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+
+  @keyframes payline7Section3MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section4-match-triple-animation {
+    width: 10%;
+    height: 5px;
+    background:  rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section4MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+    transform: rotate(-24deg) translate(-126.5px, -4px);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 22%;
+  }
+
+  @keyframes payline7Section4MatchTriple {
+    0% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-126.5px, -4px) scaleX(1);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left;
+      transform: rotate(-24deg) translate(-126.5px, -4px) scaleX(2.5);
+      opacity: 1;
+    }
+  }
+
+  .payline7-section5-match-triple-animation {
+    width: 0%;
+    height: 5px;
+    background: rgb(26, 25, 25);
+    z-index: 20;
+    animation-name: payline7Section5MatchTriple;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    position: absolute;
+    top: 63.5%;
+    left: 77.8%;
+  }
+
+  @keyframes payline7Section5MatchTriple {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+}

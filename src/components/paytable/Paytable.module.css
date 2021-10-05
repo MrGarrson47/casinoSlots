@@ -1,0 +1,63 @@
+
+.main-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgb(25, 56, 156);
+    overflow-y: scroll;
+}
+
+.matching-container{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.heading{
+    background: white;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    padding: .1em;
+}
+
+.inner-container{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    background: rgb(35, 81, 231);
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-container{
+    margin-right: 1em;
+    width: 80px;
+    height: 50px;
+}
+
+.img{
+    display: block;
+    width: 100%;
+}
+
+.plus-character, .equals-character{
+    margin-right: 1em;
+    font-weight: 900;
+}
+
+.payout-info {
+    background: rgb(139, 134, 134);
+    border-radius: 10px;
+    padding: .1em;
+    padding-left: .3em;
+    padding-right: .3em;
+    text-align: center;
+    font-weight: 900;
+}

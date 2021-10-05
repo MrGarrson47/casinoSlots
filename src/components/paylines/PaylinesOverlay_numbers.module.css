@@ -1,0 +1,187 @@
+.payline-number {
+  width: 5%;
+  color: black;
+  text-align: center;
+  font-weight: 800;
+  z-index: 30;
+}
+
+.number-1 {
+  background: red;
+}
+
+.number-2 {
+  background: blue;
+}
+
+.number-3 {
+  background: green;
+}
+
+.number-4 {
+  background: yellow;
+}
+
+.number-5 {
+  background: purple;
+}
+
+.number-6 {
+  background: rgb(20, 138, 98);
+}
+
+.number-7 {
+  background: rgb(138, 20, 55);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .payline-number {
+    min-width: 10px;
+    font-weight: 600;
+    font-size: 8px;
+  }
+  .number-6-right {
+    position: absolute;
+    right: 0%;
+    top: 13%;
+    background: rgb(20, 138, 98);
+  }
+  .number-7-right {
+    position: absolute;
+    right: 0%;
+    top: 62%;
+    background: rgb(138, 20, 55);
+  }
+  .number-1-right{
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: red;
+  }
+  .number-2-right {
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: blue;
+  }
+  .number-3-right{
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: green;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .number-6-right {
+    position: absolute;
+    right: 0%;
+    top: 18%;
+    background: rgb(20, 138, 98);
+  }
+  .number-7-right {
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    background: rgb(138, 20, 55);
+  }
+  .payline-number {
+    width: 20px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .number-1-right{
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: red;
+  }
+  .number-2-right {
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: blue;
+  }
+  .number-3-right{
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background: green;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .number-6-right {
+    position: absolute;
+    right: 0%;
+    top: 27%;
+    background: rgb(20, 138, 98);
+  }
+  .number-7-right {
+    position: absolute;
+    right: 0%;
+    top: 58%;
+    background: rgb(138, 20, 55);
+  }
+  .number-1-right{
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: red;
+  }
+  .number-2-right {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: blue;
+  }
+  .number-3-right{
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: green;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+  .payline-number {
+    width: 20px;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  .number-1-right {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: red;
+  }
+  .number-2-right {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: blue;
+  }
+  .number-3-right {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: green;
+  }
+  .number-6-right {
+    position: absolute;
+    right: 0;
+    top: 27%;
+    background: rgb(20, 138, 98);
+  }
+  .number-7-right {
+    position: absolute;
+    right: 0;
+    top: 58%;
+    background: rgb(138, 20, 55);
+  }
+ 
+}

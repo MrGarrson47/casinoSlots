@@ -9,6 +9,9 @@ body {
 
 #root {
   background: rgb(26, 25, 25);
+  display: flex;
+  
+  justify-content: center;
 }
 
 code {

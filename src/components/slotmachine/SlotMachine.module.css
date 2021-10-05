@@ -1,13 +1,44 @@
-
-.main-container{
-    margin-left: 6em;
-    margin-right: 6em;
-    border: 1px solid black;
+.rows-container {
+  position: relative;
+  display: flex;
+  background: black;
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.rows-container{
-    display: flex;
-    background: black;
-    overflow: hidden;
+@media only screen and (max-width: 600px) {
+  .main-container {
+    width: 300px;
+  }
+  .rows-container {
+    height: 150px;
+  }
 }
 
+@media only screen and (min-width: 600px) {
+  .main-container {
+    width: 500px;
+  }
+  .rows-container {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    width: 650px;
+  }
+  .rows-container {
+    height: 325px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-container {
+    width: 900px;
+  }
+  .rows-container {
+    height: 450px;
+  }
+}

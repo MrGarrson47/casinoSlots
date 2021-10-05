@@ -9,28 +9,50 @@
   flex-direction: column;
   justify-content: space-around;
   background: white;
+  outline: 5px solid blue;
 }
 
-@media only screen and (max-width: 600px) {
-  .main-container {
-    height: 150px;
-  }
+.col-stop-animation{
+  animation-name: colStopFlash;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
 }
 
-@media only screen and (min-width: 600px) {
-  .main-container {
-    height: 200px;
-  }
+@keyframes colStopFlash{
+  0%{outline: 5px solid blue;}
+  25%{outline: 10px solid rgb(29, 29, 250);}
+  50%{outline: 15px solid rgb(54, 54, 255);}
+  75%{outline: 20px solid rgb(81, 81, 253);}
+  100%{outline: 25px solid rgb(110, 110, 255);}
 }
 
-@media only screen and (min-width: 768px) {
-  .main-container {
-    height: 350px;
-  }
+.col-flash-animation{
+  animation-name: colFlash;
+  animation-duration: 200ms;
 }
 
-@media only screen and (min-width: 992px) {
-  .main-container {
-    height: 500px;
-  }
+@keyframes colFlash {
+  0%{outline-color: red;}
+  100%{outline-color: blue;}
 }
+
+.timing-1{
+  animation-iteration-count: 10;
+}
+
+.timing-2{
+  animation-iteration-count: 15;
+}
+
+.timing-3{
+  animation-iteration-count: 20;
+}
+
+.timing-4{
+  animation-iteration-count: 25;
+}
+
+.timing-5{
+  animation-iteration-count: 30;
+}
+
