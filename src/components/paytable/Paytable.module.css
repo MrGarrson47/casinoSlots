@@ -15,19 +15,49 @@
     margin-left: 1em;
 }
 
+.rules-heading{
+    margin: auto;
+    margin-top: .5em;
+    text-align: center;
+    background: black;
+    color: white;
+    pad: .1em;
+}
+
+.rules-container{
+    width: 80%;
+    margin: auto;
+    margin-top: .5em;
+    background: grey;
+    padding: .5em;
+}
+
+.rules-info{
+    color: white;
+    padding: .3em;
+    list-style: none;
+}
+
+.rules-list{
+    background: rgb(104, 104, 104);
+    border-radius: 10px;
+    padding-left: 0;
+}
+
 .heading{
     background: white;
     border-radius: 15px;
     width: 50%;
     text-align: center;
     padding: .1em;
+    margin: auto;
 }
 
 .inner-container{
     display: flex;
     position: relative;
     width: fit-content;
-    margin-left: 1em;
+    margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .5em;
@@ -61,3 +91,23 @@
     text-align: center;
     font-weight: 900;
 }
+
+@media only screen and (max-width: 600px) {
+    .rules-info{
+        font-size: 10px;
+    }
+    .img-container{
+        margin-right: .2em;
+        width: 40px;
+        height: 25px;
+    }
+    .payout-info {
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 14px;
+    }
+    .rules-heading{
+        font-size: 16px;
+    }
+  }

@@ -51,6 +51,7 @@ const SlotMachine = () => {
     singleSlotStop,
     slotsSpinningAudio
   );
+  
 
   // only runs when the slots have spun, calculates the row matches and winning row payouts
   useEffect(() => {
@@ -112,12 +113,14 @@ const SlotMachine = () => {
       <div className={classes["main-container"]}>
         <div className={classes["user-bar-container"]}>
           <UserBar
+            freeSpins={slotReducerHandler.userState.freeSpins}
             availableCash={slotReducerHandler.userState.cash}
             currentBet={slotReducerHandler.userState.bet}
             onClickPaytable={showPaytableHandler}
           />
         </div>
         <div className={classes["rows-container"]}>
+        {showPaytable && <Paytable />}
           <PaylinesOverlay
             showPaylines={slotReducerHandler.userState.showPaylines}
             amountOfLines={slotReducerHandler.userState.amountOfLines}
@@ -152,7 +155,7 @@ const SlotMachine = () => {
                 slotReducerHandler.userState.payline7MatchTriple,
             }}
           />
-          {showPaytable && <Paytable />}
+          
           <SlotColumn
             colPosition={1}
             rowMatches={slotReducerHandler.arrayOfCol1Matches}
@@ -183,9 +186,9 @@ const SlotMachine = () => {
         </div>
         <div className={classes["options-container"]}>
           <OptionContainer
-            disabled={
-              slotReducerHandler.userState.amountOfLines === "Select Paylines"
-            }
+            paylineSelectorIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.freeSpins > 0}
+            changingBetIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.freeSpins > 0 || slotReducerHandler.userState.amountOfLines === "Select Paylines"}
+            startingSpinIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.amountOfLines === "Select Paylines"}
             newOnBet={slotReducerHandler.newBetHandler}
             perLineBet={slotReducerHandler.userState.perLineBet}
             amountOfLines={slotReducerHandler.userState.amountOfLines}
@@ -193,7 +196,6 @@ const SlotMachine = () => {
             totalCostOfSpin={slotReducerHandler.userState.bet}
             onStartSpinner={startSpinnerHandler}
             hasPlacedBet={!slotReducerHandler.userState.bet}
-            slotsAreSpinning={spinTimerHandler.slotsAreSpinning}
           />
         </div>
       </div>

@@ -1,10 +1,10 @@
-const checkForWildCards = (imagesSourceArray) => {
-  let copyOfImagesSourceArray = [...imagesSourceArray];
+const checkForWildCards = (imagesArray) => {
+  let copyOfImagesArray = [...imagesArray];
   let arrayOfWildCardIndexes = [];
 
   // get indexes for any wild card in the payline
-  for (let i = 0; i < imagesSourceArray.length; i++) {
-    if (imagesSourceArray[i] === "/puppypics/10.jpg") {
+  for (let i = 0; i < imagesArray.length; i++) {
+    if (imagesArray[i].src === "/puppypics/10.jpg") {
       arrayOfWildCardIndexes.push(i);
     }
   }
@@ -14,7 +14,7 @@ const checkForWildCards = (imagesSourceArray) => {
   // WWW or NNN
   // return the original sources if there are three wild cards or if there are no wild cards
   if (arrayOfWildCardIndexes.length === 3 || arrayOfWildCardIndexes.length === 0) {
-    return imagesSourceArray;
+    return imagesArray;
   }
 
   // WNN
@@ -24,7 +24,7 @@ const checkForWildCards = (imagesSourceArray) => {
     arrayOfWildCardIndexes.includes(0) &&
     !arrayOfWildCardIndexes.includes(1) && !arrayOfWildCardIndexes.includes(2)
   ) {
-    copyOfImagesSourceArray[0] = imagesSourceArray[1];
+    copyOfImagesArray[0] = imagesArray[1];
   }
 
   // WNW
@@ -34,8 +34,8 @@ const checkForWildCards = (imagesSourceArray) => {
     arrayOfWildCardIndexes.includes(0) &&
     !arrayOfWildCardIndexes.includes(1) && arrayOfWildCardIndexes.includes(2)
   ) {
-    copyOfImagesSourceArray[0] = imagesSourceArray[1];
-    copyOfImagesSourceArray[2] = imagesSourceArray[1];
+    copyOfImagesArray[0] = imagesArray[1];
+    copyOfImagesArray[2] = imagesArray[1];
   }
 
   // WWN
@@ -45,36 +45,47 @@ const checkForWildCards = (imagesSourceArray) => {
     arrayOfWildCardIndexes.includes(0) &&
     arrayOfWildCardIndexes.includes(1)
   ) {
-    copyOfImagesSourceArray[0] = imagesSourceArray[2];
-    copyOfImagesSourceArray[1] = imagesSourceArray[2];
+    copyOfImagesArray[0] = imagesArray[2];
+    copyOfImagesArray[1] = imagesArray[2];
   }
 
   // NWN
   // if a normal symbol is in first position and second position is a wild card and third position is a normal symbol,
   // change wild card in second position to symbol in first position
   else if(arrayOfWildCardIndexes.includes(1) && !arrayOfWildCardIndexes.includes(0) && !arrayOfWildCardIndexes.includes(2)){
-    copyOfImagesSourceArray[1] = imagesSourceArray[0];
+    copyOfImagesArray[1] = imagesArray[0];
   }
 
   // NNW
   // if a normal symbol is in first position and second position is a normal symbol and third position is a wild card,
   // change wild card in third position to symbol in second position
   else if(arrayOfWildCardIndexes.includes(2) && !arrayOfWildCardIndexes.includes(0) && !arrayOfWildCardIndexes.includes(1)){
-    copyOfImagesSourceArray[2] = imagesSourceArray[1];
+    copyOfImagesArray[2] = imagesArray[1];
   }
 
   // NWW
   // if a normal symbol is in first position and second position is a wild card and third position is a wild card,
   // change wild card in second and third position to symbol in first position
   else if(!arrayOfWildCardIndexes.includes(0) && arrayOfWildCardIndexes.includes(1) && arrayOfWildCardIndexes.includes(2)){
-    copyOfImagesSourceArray[1] = imagesSourceArray[0];
-    copyOfImagesSourceArray[2] = imagesSourceArray[0]; 
+    copyOfImagesArray[1] = imagesArray[0];
+    copyOfImagesArray[2] = imagesArray[0]; 
 
   }
 
-  return copyOfImagesSourceArray;
+  return copyOfImagesArray;
 
 };
+
+const checkForScatterCards = (imagesArray)=>{
+  let cardCount = 0;
+
+  imagesArray.forEach(img=>{
+    if(img.src === "/puppypics/11.jpg"){
+      cardCount++;
+    }
+  })
+  return cardCount;
+}
 
 export const calcPayline1SpinResults = (
   firstColumnImages,
@@ -85,20 +96,21 @@ export const calcPayline1SpinResults = (
   imageIndexForCol3Row1,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row1].src,
-    secondColumnImages[imageIndexForCol2Row1].src,
-    thirdColumnImages[imageIndexForCol3Row1].src,
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row1],
+    secondColumnImages[imageIndexForCol2Row1],
+    thirdColumnImages[imageIndexForCol3Row1],
   ]);
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row1].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row1].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row1].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row1].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row1].src;
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
 
-  if (src1 === src2 && src1 === src3) {
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+  
+
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row1Match: true,
@@ -108,8 +120,9 @@ export const calcPayline1SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row1Match: true,
@@ -120,6 +133,7 @@ export const calcPayline1SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -137,20 +151,21 @@ export const calcPayline2SpinResults = (
   imageIndexForCol3Row2,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row2].src,
-    secondColumnImages[imageIndexForCol2Row2].src,
-    thirdColumnImages[imageIndexForCol3Row2].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row2],
+    secondColumnImages[imageIndexForCol2Row2],
+    thirdColumnImages[imageIndexForCol3Row2]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row2].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row2].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row2].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row2].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row2].src;
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
 
-  if (src1 === src2 && src1 === src3) {
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+ 
+
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -160,8 +175,9 @@ export const calcPayline2SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -172,6 +188,7 @@ export const calcPayline2SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -189,19 +206,20 @@ export const calcPayline3SpinResults = (
   imageIndexForCol3Row3,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row3].src,
-    secondColumnImages[imageIndexForCol2Row3].src,
-    thirdColumnImages[imageIndexForCol3Row3].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row3],
+    secondColumnImages[imageIndexForCol2Row3],
+    thirdColumnImages[imageIndexForCol3Row3]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row3].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row3].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row3].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row3].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row3].src;
-  if (src1 === src2 && src1 === src3) {
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
+
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+ 
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row3Match: true,
@@ -211,8 +229,9 @@ export const calcPayline3SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row3Match: true,
@@ -223,6 +242,7 @@ export const calcPayline3SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -240,19 +260,20 @@ export const calcPayline4SpinResults = (
   imageIndexForCol3Row3,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row1].src,
-    secondColumnImages[imageIndexForCol2Row2].src,
-    thirdColumnImages[imageIndexForCol3Row3].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row1],
+    secondColumnImages[imageIndexForCol2Row2],
+    thirdColumnImages[imageIndexForCol3Row3]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row1].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row1].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row1].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row2].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row3].src;
-  if (src1 === src2 && src1 === src3) {
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
+
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+ 
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row1Match: true,
@@ -262,8 +283,9 @@ export const calcPayline4SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row1Match: true,
@@ -274,6 +296,7 @@ export const calcPayline4SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -291,19 +314,20 @@ export const calcPayline5SpinResults = (
   imageIndexForCol3Row1,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row3].src,
-    secondColumnImages[imageIndexForCol2Row2].src,
-    thirdColumnImages[imageIndexForCol3Row1].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row3],
+    secondColumnImages[imageIndexForCol2Row2],
+    thirdColumnImages[imageIndexForCol3Row1]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row3].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row3].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row3].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row2].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row1].src;
-  if (src1 === src2 && src1 === src3) {
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
+
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+  
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row3Match: true,
@@ -313,8 +337,9 @@ export const calcPayline5SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row3Match: true,
@@ -325,6 +350,7 @@ export const calcPayline5SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -342,19 +368,20 @@ export const calcPayline6SpinResults = (
   imageIndexForCol3Row2,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row2].src,
-    secondColumnImages[imageIndexForCol2Row1].src,
-    thirdColumnImages[imageIndexForCol3Row2].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row2],
+    secondColumnImages[imageIndexForCol2Row1],
+    thirdColumnImages[imageIndexForCol3Row2]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row2].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row2].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row2].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row1].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row2].src;
-  if (src1 === src2 && src1 === src3) {
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
+
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+  
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -364,8 +391,9 @@ export const calcPayline6SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -376,6 +404,7 @@ export const calcPayline6SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -393,19 +422,20 @@ export const calcPayline7SpinResults = (
   imageIndexForCol3Row2,
   userState
 ) => {
-  let [src1, src2, src3] = checkForWildCards([
-    firstColumnImages[imageIndexForCol1Row2].src,
-    secondColumnImages[imageIndexForCol2Row3].src,
-    thirdColumnImages[imageIndexForCol3Row2].src
+  let [image1, image2, image3] = checkForWildCards([
+    firstColumnImages[imageIndexForCol1Row2],
+    secondColumnImages[imageIndexForCol2Row3],
+    thirdColumnImages[imageIndexForCol3Row2]
   ])
 
-  let match2Payout = firstColumnImages[imageIndexForCol1Row2].match2Payout;
-  let match3Payout = firstColumnImages[imageIndexForCol1Row2].match3Payout;
-  // let src1 = firstColumnImages[imageIndexForCol1Row2].src;
-  // let src2 = secondColumnImages[imageIndexForCol2Row3].src;
-  // let src3 = thirdColumnImages[imageIndexForCol3Row2].src;
-  if (src1 === src2 && src1 === src3) {
+  let scatterCardCount = checkForScatterCards([image1, image2, image3])
+
+  let match2Payout = image1.match2Payout;
+  let match3Payout = image1.match3Payout;
+  
+  if (image1.id === image2.id && image1.id === image3.id) {
     return {
+      scatterCardCount,
       payout: match3Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -415,8 +445,9 @@ export const calcPayline7SpinResults = (
       paylineMatchTriple: true,
       paylineMatchDouble: false,
     };
-  } else if (src1 === src2) {
+  } else if (image1.id === image2.id) {
     return {
+      scatterCardCount,
       payout: match2Payout * userState.perLineBet,
       matches: {
         col1Row2Match: true,
@@ -427,6 +458,7 @@ export const calcPayline7SpinResults = (
     };
   } else {
     return {
+      scatterCardCount,
       payout: 0,
       matches: null,
       paylineMatchDouble: false,
@@ -455,6 +487,7 @@ export const calcSpinResults = (
     matches: line1Matches,
     paylineMatchDouble: payline1MatchDouble,
     paylineMatchTriple: payline1MatchTriple,
+    scatterCardCount: scatterCardCountLine1
   } = calcPayline1SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -469,6 +502,7 @@ export const calcSpinResults = (
     matches: line2Matches,
     paylineMatchDouble: payline2MatchDouble,
     paylineMatchTriple: payline2MatchTriple,
+    scatterCardCount: scatterCardCountLine2
   } = calcPayline2SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -483,6 +517,7 @@ export const calcSpinResults = (
     matches: line3Matches,
     paylineMatchDouble: payline3MatchDouble,
     paylineMatchTriple: payline3MatchTriple,
+    scatterCardCount: scatterCardCountLine3
   } = calcPayline3SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -497,6 +532,7 @@ export const calcSpinResults = (
     matches: line4Matches,
     paylineMatchDouble: payline4MatchDouble,
     paylineMatchTriple: payline4MatchTriple,
+    scatterCardCount: scatterCardCountLine4
   } = calcPayline4SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -511,6 +547,7 @@ export const calcSpinResults = (
     matches: line5Matches,
     paylineMatchDouble: payline5MatchDouble,
     paylineMatchTriple: payline5MatchTriple,
+    scatterCardCount: scatterCardCountLine5
   } = calcPayline5SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -525,6 +562,7 @@ export const calcSpinResults = (
     matches: line6Matches,
     paylineMatchDouble: payline6MatchDouble,
     paylineMatchTriple: payline6MatchTriple,
+    scatterCardCount: scatterCardCountLine6
   } = calcPayline6SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -539,6 +577,7 @@ export const calcSpinResults = (
     matches: line7Matches,
     paylineMatchDouble: payline7MatchDouble,
     paylineMatchTriple: payline7MatchTriple,
+    scatterCardCount: scatterCardCountLine7
   } = calcPayline7SpinResults(
     col1ArrayOfImageObjects,
     col2ArrayOfImageObjects,
@@ -551,6 +590,7 @@ export const calcSpinResults = (
 
   if (userState.amountOfLines === "3") {
     return {
+      scatterCardCount: scatterCardCountLine1 + scatterCardCountLine2 + scatterCardCountLine3,
       payout: line1Payout + line2Payout + line3Payout,
       matches: {
         ...line1Matches,
@@ -568,6 +608,7 @@ export const calcSpinResults = (
     };
   } else if (userState.amountOfLines === "5") {
     return {
+      scatterCardCount: scatterCardCountLine1 + scatterCardCountLine2 + scatterCardCountLine3 + scatterCardCountLine4 + scatterCardCountLine5,
       payout:
         line1Payout + line2Payout + line3Payout + line4Payout + line5Payout,
       matches: {
@@ -592,6 +633,7 @@ export const calcSpinResults = (
     };
   } else if (userState.amountOfLines === "7") {
     return {
+      scatterCardCount: scatterCardCountLine1 + scatterCardCountLine2 + scatterCardCountLine3 + scatterCardCountLine4 + scatterCardCountLine5 + scatterCardCountLine6 + scatterCardCountLine7,
       payout:
         line1Payout +
         line2Payout +
@@ -628,6 +670,7 @@ export const calcSpinResults = (
     };
   } else {
     return {
+      scatterCardCount: 0,
       payout: 0,
       matches: {
         col1Row1Match: false,

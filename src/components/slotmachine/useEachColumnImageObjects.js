@@ -4,7 +4,7 @@ import { allImageObjects } from "../../slotImages";
 export const getArrayOfRandomImageObjects = () => {
     let arrayOfImageObjects = [];
     for(let i = 0; i < 10; i++){
-        arrayOfImageObjects.push(allImageObjects[Math.floor(Math.random() * 79)]);
+        arrayOfImageObjects.push(allImageObjects[Math.floor(Math.random() * 84)]);
     }
     return arrayOfImageObjects;
 };

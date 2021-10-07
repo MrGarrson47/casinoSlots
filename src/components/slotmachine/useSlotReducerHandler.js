@@ -23,6 +23,39 @@ const userReducer = (state, action) => {
     };
   }
   if (action.type === "COMMIT_BET") {
+
+    if(state.freeSpins >= 1){
+      return {
+        ...state,
+        freeSpins: state.freeSpins - 1,
+        showPaylines: false,
+        payline1MatchDouble: false,
+        payline1MatchTriple: false,
+        payline2MatchDouble: false,
+        payline2MatchTriple: false,
+        payline3MatchDouble: false,
+        payline3MatchTriple: false,
+        payline4MatchDouble: false,
+        payline4MatchTriple: false,
+        payline5MatchDouble: false,
+        payline5MatchTriple: false,
+        payline6MatchDouble: false,
+        payline6MatchTriple: false,
+        payline7MatchDouble: false,
+        payline7MatchTriple: false,
+        col1Row1Match: false,
+        col1Row2Match: false,
+        col1Row3Match: false,
+        col2Row1Match: false,
+        col2Row2Match: false,
+        col2Row3Match: false,
+        col3Row1Match: false,
+        col3Row2Match: false,
+        col3Row3Match: false,
+        foundMatch: null,
+      };
+    }
+
     return {
       ...state,
       showPaylines: false,
@@ -57,6 +90,8 @@ const userReducer = (state, action) => {
   if (action.type === "NEW_CALC_SPIN_RESULTS") {
     return {
       ...state,
+      freeSpins: state.freeSpins + (action.payload.scatterCardCount),
+      scatterCardCount: 0,
       totalWinnings: action.payload.payout,
       cash: state.cash + action.payload.payout,
       ...action.payload.matches,
@@ -67,6 +102,8 @@ const userReducer = (state, action) => {
 };
 
 const initialUserReducerState = {
+  freeSpins: 0,
+  scatterCardCount: 0,
   totalWinnings: 0,
   cash: 500,
   bet: NaN,
