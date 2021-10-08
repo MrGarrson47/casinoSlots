@@ -13,7 +13,6 @@ const OptionContainer = (props) => {
     changingBetIsDisabled,
     startingSpinIsDisabled,
   } = props;
-  console.log(totalCostOfSpin);
   return (
     <>
       <div className={classes["main-container"]}>
@@ -44,7 +43,7 @@ const OptionContainer = (props) => {
             Spin Cost {totalCostOfSpin.toFixed(2)}
           </p>
         )}
-        <Button disabled={startingSpinIsDisabled} onClick={onStartSpinner}>
+        <Button disabled={startingSpinIsDisabled} classes={startingSpinIsDisabled ? classes["spin-btn-disabled"] : ""} onClick={onStartSpinner}>
           Spin
         </Button>
       </div>

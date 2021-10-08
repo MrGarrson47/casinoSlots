@@ -80,7 +80,6 @@ export const useTimerHandlerFunctions = (imageIndexHandler, singleSlotStop, slot
 
     // all reels have stopped spinning, calc spin results by increasing spin count state which initiates a useEffect
     setTimeout(() => {
-      console.log("stopped spinning!");
       setSlotsAreSpinning(false);
       setSpinCount((state) => {
         return (state += 1);

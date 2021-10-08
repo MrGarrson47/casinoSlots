@@ -1,7 +1,7 @@
 import classes from "./Button.module.css";
 
 const Button = (props) => {
-  const allClasses = [classes.button, props.classes || ""].join(" ");
+  const allClasses = props.classes || classes.button ;
 
   return (
     <button disabled={props.disabled} onClick={props.onClick} id={props.id} className={allClasses}>

@@ -22,6 +22,12 @@ let foundMatch = new Audio(process.env.PUBLIC_URL + "/sounds/foundMatch.wav");
 let singleSlotStop = new Audio(
   process.env.PUBLIC_URL + "/sounds/singleSlotStop.wav"
 );
+let selectLinesAudio = new Audio(
+  process.env.PUBLIC_URL + "/sounds/linesSelect.wav"
+);
+let backgroundAudio = new Audio(
+  process.env.PUBLIC_URL + "/sounds/background.wav"
+);
 
 const SlotMachine = () => {
   const [showPaytable, setShowPaytable] = useState(false);
@@ -51,7 +57,21 @@ const SlotMachine = () => {
     singleSlotStop,
     slotsSpinningAudio
   );
-  
+
+  if (!spinTimerHandler.slotsAreSpinning) {
+    backgroundAudio.loop = true;
+    backgroundAudio.play();
+    backgroundAudio.volume = 0.5;
+  }else{
+    backgroundAudio.pause();
+  }
+
+  // only runs when the player changes the amount of pay lines, plays a sound
+  useEffect(() => {
+    selectLinesAudio.pause();
+    selectLinesAudio.currentTime = 0;
+    selectLinesAudio.play();
+  }, [slotReducerHandler.userState.amountOfLines]);
 
   // only runs when the slots have spun, calculates the row matches and winning row payouts
   useEffect(() => {
@@ -91,7 +111,7 @@ const SlotMachine = () => {
   };
 
   const spinResults = () => {
-    if (spinTimerHandler.spinCount != 0) {
+    if (spinTimerHandler.spinCount !== 0) {
       slotReducerHandler.userDispatch({
         type: "NEW_CALC_SPIN_RESULTS",
         payload: getSpinResults,
@@ -120,7 +140,7 @@ const SlotMachine = () => {
           />
         </div>
         <div className={classes["rows-container"]}>
-        {showPaytable && <Paytable />}
+          {showPaytable && <Paytable />}
           <PaylinesOverlay
             showPaylines={slotReducerHandler.userState.showPaylines}
             amountOfLines={slotReducerHandler.userState.amountOfLines}
@@ -155,7 +175,7 @@ const SlotMachine = () => {
                 slotReducerHandler.userState.payline7MatchTriple,
             }}
           />
-          
+
           <SlotColumn
             colPosition={1}
             rowMatches={slotReducerHandler.arrayOfCol1Matches}
@@ -186,9 +206,24 @@ const SlotMachine = () => {
         </div>
         <div className={classes["options-container"]}>
           <OptionContainer
-            paylineSelectorIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.freeSpins > 0}
-            changingBetIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.freeSpins > 0 || slotReducerHandler.userState.amountOfLines === "Select Paylines"}
-            startingSpinIsDisabled={spinTimerHandler.slotsAreSpinning || slotReducerHandler.userState.amountOfLines === "Select Paylines"}
+            paylineSelectorIsDisabled={
+              spinTimerHandler.slotsAreSpinning ||
+              slotReducerHandler.userState.freeSpins > 0 ||
+              showPaytable
+            }
+            changingBetIsDisabled={
+              spinTimerHandler.slotsAreSpinning ||
+              slotReducerHandler.userState.freeSpins > 0 ||
+              slotReducerHandler.userState.amountOfLines ===
+                "Select Paylines" ||
+              showPaytable
+            }
+            startingSpinIsDisabled={
+              spinTimerHandler.slotsAreSpinning ||
+              slotReducerHandler.userState.amountOfLines ===
+                "Select Paylines" ||
+              showPaytable
+            }
             newOnBet={slotReducerHandler.newBetHandler}
             perLineBet={slotReducerHandler.userState.perLineBet}
             amountOfLines={slotReducerHandler.userState.amountOfLines}

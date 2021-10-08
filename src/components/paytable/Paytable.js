@@ -31,7 +31,7 @@ const Paytable = () => {
           <h4 className={classes.heading}>The Wild Card</h4>
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]} style={{marginRight: 0}}>
-                <img className={classes.img} src={firstColumnImages[9].src} />
+                <img className={classes.img} alt="symbol" src={firstColumnImages[9].src} />
             </div>
           </div>   
           <ul className={classes["rules-list"]}>
@@ -45,7 +45,7 @@ const Paytable = () => {
           <h4 className={classes.heading}>The Scatter Card</h4>
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]} style={{marginRight: 0}}>
-                <img className={classes.img} src={firstColumnImages[10].src} />
+                <img className={classes.img} alt="symbol" src={firstColumnImages[10].src} />
             </div>
           </div>          
           <ul className={classes["rules-list"]}>
@@ -67,11 +67,11 @@ const Paytable = () => {
           <h3 className={classes.heading}>Double Trouble!</h3>
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[0].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[0].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[0].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[0].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>3 * Line Cost</p>
@@ -79,11 +79,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[1].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[1].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[1].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[1].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>4 * Line Cost</p>
@@ -91,11 +91,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[2].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[2].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[2].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[2].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>5 * Line Cost</p>
@@ -103,11 +103,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[3].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[3].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[3].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[3].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>6 * Line Cost</p>
@@ -115,11 +115,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[4].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[4].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[4].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[4].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>7 * Line Cost</p>
@@ -127,11 +127,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[5].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[5].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[5].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[5].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>8 * Line Cost</p>
@@ -139,11 +139,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[6].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[6].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[6].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[6].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>12 * Line Cost</p>
@@ -151,11 +151,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[7].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[7].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[7].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[7].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>14 * Line Cost</p>
@@ -163,11 +163,11 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[8].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[8].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[8].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[8].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>16 * Line Cost</p>
@@ -180,15 +180,15 @@ const Paytable = () => {
 
         <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[0].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[0].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[0].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[0].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[0].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[0].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>5 * Line Cost</p>
@@ -196,15 +196,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[1].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[1].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[1].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[1].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[1].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[1].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>6 * Line Cost</p>
@@ -212,15 +212,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[2].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[2].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[2].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[2].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[2].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[2].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>7 * Line Cost</p>
@@ -228,15 +228,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[3].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[3].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[3].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[3].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[3].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[3].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>8 * Line Cost</p>
@@ -244,15 +244,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[4].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[4].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[4].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[4].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[4].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[4].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>9 * Line Cost</p>
@@ -260,15 +260,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[5].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[5].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[5].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[5].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[5].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[5].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>10 * Line Cost</p>
@@ -276,15 +276,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[6].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[6].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[6].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[6].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[6].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[6].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>14 * Line Cost</p>
@@ -292,15 +292,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[7].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[7].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[7].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[7].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[7].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[7].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>16 * Line Cost</p>
@@ -308,15 +308,15 @@ const Paytable = () => {
 
           <div className={classes["inner-container"]}>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[8].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[8].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[8].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[8].src} />
             </div>
             <p className={classes["plus-character"]}>+</p>
             <div className={classes["img-container"]}>
-              <img className={classes.img} src={firstColumnImages[8].src} />
+              <img className={classes.img} alt="symbol" src={firstColumnImages[8].src} />
             </div>
             <p className={classes["equals-character"]}>=</p>
             <p className={classes["payout-info"]}>18 * Line Cost</p>

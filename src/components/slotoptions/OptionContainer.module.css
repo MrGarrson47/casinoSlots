@@ -6,6 +6,17 @@
     padding: .5em;
 }
 
+.spin-btn-disabled{
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 600;
+    color: white;
+    background: grey;
+    border-radius: 10px;
+    border: 4px solid grey;
+}
+
 @media only screen and (max-width: 600px){
     .line-selector-input{
         text-align: center;

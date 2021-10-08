@@ -56,7 +56,7 @@ export const handleTransition = (state, nodeRef, src, timingClass, rowMatchClass
   }
   return (
     <div ref={nodeRef} className={imgContainerClasses}>
-      <img ref={nodeRef} className={classes["slot-img"]} src={src} />
+      <img ref={nodeRef} alt="symbol" className={classes["slot-img"]} src={src} />
     </div>
   );
 }

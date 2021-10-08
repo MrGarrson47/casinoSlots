@@ -18,9 +18,13 @@ const SlotRow = (props) => {
     setImgSourceBoolean((state) => !state);
   }, [src]);
 
+  useEffect(()=>{
+    playSingleRowMatchAudio(colPosition, rowIsAMatch);
+  }, [rowIsAMatch])
+
   const nodeRef = useRef(null);
 
-  playSingleRowMatchAudio(colPosition, rowIsAMatch);
+  // playSingleRowMatchAudio(colPosition, rowIsAMatch);
 
   let timingClass = getTimingClass(timing);
 
